@@ -157,13 +157,21 @@ main {
 
 .row {
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(20, 1fr);
 }
 
 #new-task-form {
-	grid-column: span 8;
+	grid-column: span 16;
 }
 
 #del {
-	grid-column: span 2;
+	grid-column: span 4;
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 0.4s;
+	background-color: red;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
