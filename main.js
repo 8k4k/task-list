@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+	const del =document.querySelector('#del');
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
 	const list_el = document.querySelector("#tasks");
@@ -57,6 +58,10 @@ window.addEventListener('load', () => {
 		});
 
 		task_delete_el.addEventListener('click', (e) => {
+			list_el.removeChild(task_el);
+			console.log('task completed');
+		});
+		del.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
 			console.log('task completed');
 		});

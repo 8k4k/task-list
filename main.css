@@ -154,3 +154,16 @@ main {
 .task .actions .delete {
 	color: greenyellow;
 }
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+#new-task-form {
+	grid-column: span 8;
+}
+
+#del {
+	grid-column: span 2;
+}
