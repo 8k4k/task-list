@@ -52,11 +52,13 @@ window.addEventListener('load', () => {
 			} else {
 				task_edit_el.innerText = "Edit";
 				task_input_el.setAttribute("readonly", "readonly");
+				console.log('task edited')
 			}
 		});
 
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
+			console.log('task completed');
 		});
 	});
 });
